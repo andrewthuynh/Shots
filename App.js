@@ -1,12 +1,14 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import { Provider as PaperProvider, Text } from 'react-native-paper';
+import BottomNav from './components/BottomNav';
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
+      <PaperProvider style={styles.container}>
+        <BottomNav />
+      </PaperProvider>
     );
   }
 }
